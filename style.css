@@ -1,0 +1,164 @@
+:root {
+  --green: #40ff00;
+  --black: #020402;
+  --dark: #071007;
+  --card: #0d1a0d;
+  --text: #ffffff;
+  --muted: #b7c7b7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000000;
+  color: var(--text);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(2, 4, 2, 0.95);
+  border-bottom: 1px solid var(--green);
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  color: var(--green);
+  font-weight: 900;
+  font-size: 22px;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--green);
+}
+
+.hero {
+  padding: 110px 8%;
+  text-align: center;
+}
+
+.badge {
+  color: var(--green);
+  border: 1px solid var(--green);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 58px;
+  margin: 10px 0;
+}
+
+h2 {
+  color: var(--green);
+  font-size: 36px;
+  text-align: center;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.hero p {
+  max-width: 760px;
+  margin: auto;
+  font-size: 19px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--green);
+  color: #000;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 900;
+  margin: 8px;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.section {
+  padding: 70px 8%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.card {
+  background: linear-gradient(180deg, var(--card), #071007);
+  border: 1px solid rgba(64, 255, 0, 0.35);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 0 25px rgba(64, 255, 0, 0.08);
+}
+
+.card h3 {
+  color: var(--green);
+  margin-top: 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 45px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  color: var(--green);
+  font-size: 36px;
+}
+
+.terminal {
+  background: #010601;
+  border: 1px solid var(--green);
+  border-radius: 18px;
+  padding: 24px;
+  max-width: 760px;
+  margin: 35px auto 0;
+  color: var(--green);
+  font-family: Consolas, monospace;
+}
+
+footer {
+  border-top: 1px solid var(--green);
+  background: #020402;
+  text-align: center;
+  padding: 28px;
+}
