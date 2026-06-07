@@ -162,3 +162,17 @@ footer {
   text-align: center;
   padding: 28px;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #40FF00;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.logo-img {
+    height: 80px;
+    width: auto;
+}
